@@ -1,0 +1,124 @@
+#topmenu{
+	background-color: #e3e4e5;
+	height: 30px;border-bottom: 1px solid #DDDDDD;}
+#topmenu .diwei{display: inline-block;}
+
+/*  定位    */
+.diwei{
+	width: 54px;height: 30px;line-height: 30px;margin-left: 210px;}
+.diwei i{color: red;}
+.diwei:hover{
+	width:54px;background-color: #FFFFFF;border: 1px solid #CCCCCC;}
+.diwei:hover .diwei-xk{display: block;}
+.diwei.diwei-xk:hover  ul{display: block;}
+.diwei  .diwei-xk{
+	width: 320px;height: 216px;background-color: #FFFFFF;border: 1px solid #CCCCCC;display: none;}
+.diwei  .diwei-xk ul{
+	top: 8px;left: 9px;display: none;}
+.diwei .diwei-xk li{
+	display: inline-block;height: 24px;width:52px;line-height: 24px;margin: 2px 2px;
+}
+.diwei-xk a{
+	text-align: center;padding: 4px 8px;font-size: 12px;}
+.diwei-xk a:hover{
+	background-color: #f4f4f4;color: #c81623;}
+	
+/*  顶部菜单  */
+.topmenu1 {width: 800px;display: inline-block;
+}
+.topmenu li{float: left;line-height: 30px;}
+.topmenu li a{border-left: 1px solid #ccc;padding: 0 12px;color:#9999a2;font-size: 12px;}
+.topmenu li a:hover{color:#c81623;}
+.topmenu1 .zhuce{color: red;}
+
+/*    我的京东    */
+.myjd:hover a{width: 65px;background: #FFFFFF;border: 1px solid #CCCCCC;}
+.myjd:hover .myjd-xk {display: block;}
+.topmenu .myjd div{border: 1px solid #CCCCCC;background-color: #FFFFFF;top: 30px;width: 280px;height: 160px;display: none;}
+.topmenu .myjd a{border: none;padding: 4px 4px;}
+.myjd-xk li{width: 125px;padding: 1px 5px;}
+.myjd-xk hr{background-color:#f1f1f1;padding: 0;margin: 0;border: 0;height: 1px;}
+
+/*   搜索块  */
+#searchbar{background:#f6f6f6;height: 140px;}
+
+/*  main    */
+#main{background-image: url("../img/main-bg.gif");height: 480px;background-position: center;}
+
+
+/*--主菜单--*/
+#mainmenu{
+	width:190px;height:465px;background-color:#6e6568;padding-top: 15px;position: relative;
+}
+ #meau a{
+	color: #FFFFFF;
+}
+#mainmenu li{
+	height: 30px;line-height: 30px;font-size: 14px;padding-left: 12px;color: #FFFFFF;
+}
+#mainmenu li:hover{
+	background-color:#999395;
+}
+#mainmenu li:hover .dianqi2{
+	display: block;
+}
+#menu{
+	position: relative;
+}
+#mainmenu #meau a:hover{
+	color:#c81623;
+}
+/*电器二级菜单start*/
+.dianqi2{
+	width: 1000px;height: 530px;box-shadow-left:none;position: absolute;top: 0;left:190px;	background-color:#f7f7f7;position: absolute;
+}
+.dianqi-left{
+	float: left;
+}
+.dianqi-left1{
+	height: 32px;padding-top: 16px;margin-left: 15px;margin-top: 6px;
+}
+.dianqi-left1 a{
+	background-color:#6e6568;padding: 4px 10px;font-size: 12px;color: #FFFFFF;margin: 0 5px;
+}
+#mainmenu .dianqi .dianqi-left1 a:hover{background-color:#5c5251; }
+}
+
+#mainmenu #menu .dianqi-left .dianqi-left2 a{color: #000000;}
+.dianqi2{display: none;}
+.dianqi-left2-1 a:hover{
+	color:#c81623;
+}
+.dianqi-left2  a{color: #000000;}
+
+.dianqi-left2 dl{
+	display: block;border-bottom: 1px solid #EEEEEE;line-height: normal;color: #000000;
+}
+
+.dianqi-left2 dl dt{
+	display: block;text-align: right;font-weight: bold;float: left;width: 90px;padding-right: 10px;font-size: 12px;padding-top: 4px;
+}
+.dianqi-left2 dl dd{
+	display: block;overflow: hidden;width: 700px;margin: 6px 0;
+}
+.dianqi-left2 dl dd a{
+	display: block;float: left; border-left: 1px solid #CCCCCC;padding: 0 10px;margin: 4px 0;font-size: 12px;
+}
+.dianqi-right{
+	width: 169px;margin-top: 20px;margin-right:14.5px;float: right;display: inline-block;
+}
+.dianqi-right1{
+	width: 169px;margin-bottom: 10px;
+}
+.dianqi-right1 img{
+	margin: 0.5px;float: left;margin-left: 0;
+}
+.dianqi-right1 a,.menu-right2 a{
+	overflow: hidden;
+}
+.dianqi-right2{
+	width: 169px;
+}
+.dianqi-right2 img{
+	margin:0.5px 1px;}
+	/*电器二级菜单end*/
