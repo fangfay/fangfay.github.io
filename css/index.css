@@ -1,0 +1,250 @@
+body {
+  color:#fff;
+}
+.section1 {
+  background: url(../img/bg-img6.png);
+  background-size:cover; }
+
+/*让鑫充满爱*/
+#love {
+  margin-top:100px;
+}
+
+.love {
+  display: block;
+  width: 46%;
+  margin:auto; }
+
+/*搜索框*/
+#search {
+  margin-top: 100px; }
+.search-box {
+  width:700px;
+  margin: 0 auto;
+}
+.search-text {
+  margin-bottom: 28px; }
+  .search-text li {
+    position:relative;
+    display: inline-block;
+    font-size: 15px;
+    width: 90px;
+    cursor: pointer; }
+.search-text-hover {
+  font-weight: bold;
+}
+
+.search-box {
+  position: relative; }
+  .search-box form {
+    display: flex;
+    display:-webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between; }
+  .search-box input {
+    width: 77%;
+    height: 50px;
+    padding-left: 12px;
+    border: none;
+    color: #000; }
+  .search-box button {
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    background: #f1394c;
+    border: none;
+    color:#fff;
+    cursor: pointer; }
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #888; }
+
+input::-moz-input-placeholder {
+  font-size: 14px;
+  color: #888; }
+
+input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #888; }
+
+/*搜索框的三角形*/
+.sjx {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: absolute;
+  top: 39px;
+  left: 20px; }
+.sjx-block {
+  display: block;
+}
+.sjx-none {
+  display: none;
+}
+
+/*房源推荐内容*/
+.section-bg{
+  width:100%;
+  height:240px;
+  position:absolute;
+  z-index: -99;
+  background-image: url(../img/bg-section2.jpg);
+  background-size: 100% 100%;
+
+}
+.section-bg img {
+  width: 100%;
+  height:100%;
+}
+.section-bg2 {
+  width: 100%;
+  height:100%;
+  background-color:#f5f5f5;
+  z-index: -999;
+}
+.recommend-text {
+  text-align: center;
+  font-size:50px;
+  font-weight:bold;
+  padding-top:50px;
+  padding-bottom: 40px;
+}
+.recommend-box {
+  background:#fff;
+  box-shadow:0 0 2px 2px #eee;
+  padding:20px 30px;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content: space-between;
+}
+.recommend-item {
+  width: 49%;
+}
+.recommend-banner {
+  width: 100%;
+  height:180px;
+  background-size:100% 100%;
+}
+.recommend-banner1 {
+  background-image: url(../img/banner1.png);
+}
+.recommend-banner2 {
+  background-image: url(../img/banner2.png);
+}
+.recommend-banner p {
+  font-size:28px;
+  font-family: 'Microsoft JhengHei';
+  color:#000;
+  font-weight:bold;
+  margin-left:40px;
+  padding-top:46px;
+}
+.recommend-banner a {
+  display: inline-block;
+  border:1px solid #aaa;
+  border-radius: 15px;
+  padding:2px 16px;
+  color:#333;
+  margin-left: 40px;
+  margin-top:20px;
+  font-size:14px;
+}
+.recommend-banner a:hover {
+  color:#f1394c;
+  font-weight:bold;
+  border-color: #f1394c;
+}
+.recommend-house {
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content: space-between;
+  margin-top:20px;
+}
+.recommend-house-item {
+  width: 49%;
+  overflow:hidden;
+}
+.house-img {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;}
+  .house-img img {
+    width: 100%;
+    height: 100%; }
+
+.img-info {
+  color:#000;
+  display: flex;
+  display:-webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: baseline;
+  padding-bottom:8px; }
+  .img-info p {
+    font-size: 18px; }
+  .img-info .price {
+    font-size: 22px;
+    font-weight: bold;
+    color:#f1394c; }
+
+.house-info {
+  background: #fff;
+  border:1px solid #e0dbdb;
+  padding: 4px 15px;
+  display: flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  font-size: 16px;
+  color: #000; }
+.house-img-cover {
+  z-index:99;
+  background: rgba(255,255,255,0.3);
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+}
+.house-intro {
+  font-size:15px;
+}
+
+@keyframes imgAnimate {
+  form{
+    -webkit-transform: scale(1,1);
+       -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+         -o-transform: scale(1,1);
+            transform: scale(1,1);
+  }
+  to {
+    -webkit-transform: scale(1.1,1.1);
+       -moz-transform: scale(1.1,1.1);
+        -ms-transform: scale(1.1,1.1);
+         -o-transform: scale(1.1,1.1);
+            transform: scale(1.1,1.1);
+  }
+}
+.imgScale {
+  animation:imgAnimate 5s;
+  -webkit-animation:imgAnimate 5s;
+}
+
+
+
+#other {
+  position: absolute;
+  bottom: 54px;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
