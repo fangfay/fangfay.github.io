@@ -74,8 +74,12 @@
     height:40px;
     margin-top:20px;
     margin-bottom:20px;
-    display:flex;
-    align-items:center;
+}
+.search-bar form {
+  display:flex;
+  display:-webkit-flex;
+  align-items:center;
+  -webkit-align-items:center;
 }
 .search-bar-div {
   width: 800px;

@@ -74,6 +74,7 @@ nav li:after {
   height:100%;
   z-index: 9999;
   display:flex;
+  display:-webkit-flex;
   padding-top:6%;
 }
 .album2-bg {
@@ -120,6 +121,7 @@ nav li:after {
 /*房源简介*/
 .house-intro {
   display:flex;
+  display:-webkit-flex;
   margin-bottom: 40px;
 }
 .house-basic {
@@ -128,8 +130,11 @@ nav li:after {
   font-size:14px;
   color:#888;
   display:flex;
+  display:-webkit-flex;
   flex-direction:column;
+  -webkit-flex-direction:column;
   justify-content:space-between;
+  -webkit-justify-content:space-between;
 }
 .house-basic li {
   margin-bottom: 30px;
@@ -155,6 +160,7 @@ nav li:after {
   padding-top:30px;
   padding-bottom:30px;
   display:flex;
+  display:-webkit-flex;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
 }
@@ -171,8 +177,11 @@ nav li:after {
 }
 .agent-info {
   display:flex;
+  display:-webkit-flex;
   flex-direction:column;
+  -webkit-flex-direction:column;
   justify-content: space-between;
+  -webkit-justify-content:space-between;
 }
 .agent-name {
   font-size:16px;
@@ -271,13 +280,17 @@ h3 {
 /*楼盘户型*/
 .house-layout {
   display:flex;
+  display:-webkit-flex;
   justify-content:space-between;
+  -webkit-justify-content:space-between;
 }
 .layout-item {
   width:48%;
   text-align: center;
   display:flex;
+  display:-webkit-flex;
   flex-direction:column;
+  -webkit-flex-direction:column;
 }
 .layout-img {
   max-width:240px;
@@ -343,6 +356,7 @@ h3 {
 }
 .calculator-div {
   display:flex;
+  display:-webkit-flex;
 }
 .calculator dt,
 .calculator dd {
