@@ -13,13 +13,13 @@ a:hover{/*color:#2aa6fe;*/text-decoration:none;}
 em,i{font-style:normal; }
 ol,ul,dl,li,dt,dd {list-style:none}
 img {border:0;vertical-align:middle} a img{border:0}
-table {border-collapse:collapse;border-spacing:0}  
+table {border-collapse:collapse;border-spacing:0}
 
-.fl{float:left;}.fr{float:right;}.cl{clear:both;}  .over{overflow:hidden;} 
+.fl{float:left;}.fr{float:right;}.cl{clear:both;}  .over{overflow:hidden;}
 .fix{*zoom:1;}.fix:after,.fix:before{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}.z{_zoom:1;}
-.layout {width:1200px;margin:0 auto}  input{outline:none; padding:0px; } textarea{resize:none} 
+.layout {width:100%;margin:0 auto;min-width: 980px;max-width: 1200px;}  input{outline:none; padding:0px; } textarea{resize:none}
 
-/* 
+/*
   buttons
 */
 .kbtn { display: inline-block; padding: .5em 1em; border: 0 none; border: 1px solid rgba(0,0,0,.25); border-radius: 0.3em; background-image: none; box-shadow: 0 1px rgba(0,0,0,.15), inset 0 1px rgba(255,255,255,.15); color: #fff; text-align: center; text-decoration: none; text-shadow: 1px 1px rgba(0,0,0,.1); font-size: 100%; font-family: inherit; font-weight: inherit; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; user-select: none; overflow: visible; cursor: pointer; }
@@ -312,9 +312,9 @@ table {border-collapse:collapse;border-spacing:0}
 /* 单行文字溢出虚点显 示*/
 .ell { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 /* css3过渡动画效果 */
-.trans { 
-	-webkit-transition: all 0.3s; 	
-	        transition: all 0.3s; 
+.trans {
+	-webkit-transition: all 0.3s;
+	        transition: all 0.3s;
 }
 /* 大小不定元素垂直居中 */
 .dib_vm { display: inline-block; width: 0; height: 100%; vertical-align: middle; }
