@@ -1,222 +1,283 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>鑫在线</title>
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/kk-public.css">
+    <title>福居在线</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="shorcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/kk-public.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/basic.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!--[if lte IE 11]><div class="old-browser-popup" id="old" ><div class="old-browser">亲，您当前正在使用旧版本的IE浏览器，为了保证您的浏览体验，建议您使用：<img src="img/chrome.png"><a href="http://rj.baidu.com/soft/detail/14744.html?ald">谷歌浏览器</a>&nbsp;或&nbsp;&nbsp;<img src="img/firefox.png"><a href="http://rj.baidu.com/soft/detail/11843.html?ald">火狐浏览器</a><span id="oldclose"></span></div></div><![endif]-->
 </head>
 <body>
 
-    <div id="dowebok">
-        <!-- 第一屏 -->
-        <div class="section section1 ">
-            <div class="nav-bg">
-                <nav id="nav" class="layout">
-                    <a href="index.html" class="logo-box">
-                        <img src="img/logo-small.png" alt="鑫在线" class="logo">
-                    </a>
-                    <ul>
-                      <li><a href="index.html" class="nav-active">首页</a></li>
-                      <li ><a href="secondHandHouse.html" target="_blank">二手房</a></li>
-                      <li><a href="newHouse.html" target="_blank">新房</a></li>
-                      <li ><a href="leaseHouse.html" target="_blank">租房</a></li>
-                      <li ><a href="denlu.html" target="_blank">个人中心</a></li>
-                      <li ><a href="denlu.html" target="_blank">登录</a></li>
-                      <li ><a href="zhuce.html" target="_blank">注册</a></li>
+    <div class="nav-bg">
 
-                      <!-- 登陆状态
-                      <li class="signIn"><a href="#">13500001234</a></li>
-                      <li class="exit"><a href="#">退出</a></li>-->
-                    </ul>
-                </nav>
+        <!-- logo与导航 -->
+        <nav class="navbar " id="nav">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed nav_btn fl" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">福居</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand pt10 pb10 logo-box" href="#">
+                  福居在线
+              </a>
             </div>
 
-            <!-- 让鑫充满爱 -->
-            <div class="layout" id="love">
-                <img src="img/love-big.png" alt="让鑫充满爱" class="love">
-            </div>
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 
-            <!-- 搜索框 -->
-            <div class="layout" id="search">
+              <ul class="nav navbar-nav navbar-right">
+                <li ><a href="#">首页</a></li>
+                <li ><a href="secondHandHouse.html">二手房</a></li>
+                <li ><a href="leaseHouse.html">租房</a></li>
+                <li ><a>个人中心</a></li>
+                <li ><a href="denlu.html">登录</a></li>
+                <li ><a href="zhuce.html">注册</a></li>
+
+                <!-- 登陆状态
+                <li class="signIn"><a href="#">13500001234</a></li>
+                <li class="exit"><a href="#">退出</a></li>-->
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+        </nav><!-- logo与导航end -->
+
+        <!-- 搜索框 -->
+        <div class="container" id="search">
+            <div class="row">
                 <div class="search-box">
                     <ul class="search-text">
-                        <li>找二手房
+                        <li>二手房
                             <div class="sjx"></div>
                         </li>
-                        <li>找出租房
+                        <li>出租房
                             <div class="sjx sjx-none"></div>
                         </li>
                     </ul>
                     <div class="search-box">
                         <form  method="post" accept-charset="utf-8">
-                            <input type="text" name="searchKey" placeholder="请输入区域、商圈或小区名开始找房" value="">
+                            <input type="text" name="searchKey" placeholder="请输入区域、商圈或小区名开始找房">
                             <button type="submit" id="searchBtn">开始找房</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 第二屏 -->
-        <div class="section section2 rel">
-            <!-- 背景 -->
-            <div class="section-bg">
-            </div>
-            <div class="section-bg2 abs"></div>
-            <div class="layout">
-                <p class="recommend-text">推荐</p>
-            </div>
-            <div class="layout">
-                <div class="recommend-box">
-                    <div class="recommend-item">
-                        <div class="recommend-banner recommend-banner1">
-                            <p>二手房</p>
-                            <a href="secondHandHouse.html" target="_blank">查看更多</a>
-                        </div>
-                        <div class="recommend-house">
-                            <a href="secondHousePage.html" target="_blank" class="recommend-house-item">
-                                <div class="house-img rel">
-                                    <img src="img/second-hand_18.jpg">
-                                    <div class="abs house-img-cover"></div>
-                                </div>
-                                <div class="house-info">
-                                    <div class="img-info">
-                                        <p>冠亚东方星城</p>
-                                        <p class="price">147万</p>
-                                    </div>
-                                    <p class="house-intro">3房2厅 124.34㎡ 中层（共11层）</p>
-                                </div>
-                            </a>
-                            <a href="secondHousePage.html" target="_blank" class="recommend-house-item">
-                                <div class="house-img rel">
-                                    <img src="img/17208866.jpg">
-                                    <div class="abs house-img-cover"></div>
-                                </div>
-                                <div class="house-info">
-                                    <div class="img-info">
-                                        <p>阳光曼哈顿</p>
-                                        <p class="price">215万</p>
-                                    </div>
-                                    <p class="house-intro">3房2厅 124.34㎡ 中层（共11层）</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="recommend-item">
-                        <div class="recommend-banner recommend-banner2">
-                            <p>租房</p>
-                            <a href="leaseHouse.html" target="_blank">查看更多</a>
-                        </div>
-                        <div class="recommend-house">
-                            <a href="leaseHousePage.html" target="_blank" class="recommend-house-item">
-                                <div class="house-img rel">
-                                    <img src="img/second-hand_18.jpg">
-                                    <div class="abs house-img-cover"></div>
-                                </div>
-                                <div class="house-info">
-                                    <div class="img-info">
-                                        <p>冠亚东方星城</p>
-                                        <p class="price">147万</p>
-                                    </div>
-                                    <p class="house-intro">3房2厅 124.34㎡ 中层（共11层）</p>
-                                </div>
-                            </a>
-                            <a href="leaseHousePage.html" target="_blank" class="recommend-house-item">
-                                <div class="house-img rel">
-                                    <img src="img/17208866.jpg">
-                                    <div class="abs house-img-cover"></div>
-                                </div>
-                                <div class="house-info">
-                                    <div class="img-info">
-                                        <p>阳光曼哈顿</p>
-                                        <p class="price">215万</p>
-                                    </div>
-                                    <p class="house-intro">3房2厅 124.34㎡ 中层（共11层）</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
 
-            <!-- 其他 -->
-            <div id="other">
-                <div class="layout">
-                        <div class="other-list">
-                            <ul class="intro" >
-                                <li class="intro-item intro-title">
-                                    <a>关于我们</a>
-                                </li>
-                                <li class="intro-item">
-                                    <a href="#">公司简介</a>
-                                </li>
-                                <li class="intro-item">
-                                    <a href="#">公司动态</a>
-                                </li>
-                                <li class="intro-item">
-                                    <a href="#">人员招聘</a>
-                                </li>
-                            </ul>
-                            <ul class="intro">
-                                <li class="intro-item intro-title">
-                                    <a>联系我们</a>
-                                </li>
-                                <li class="intro-item">
-                                    <a href="#">服务网点</a>
-                                </li>
-                                <li class="intro-item">
-                                    <a href="#">会员尊享</a>
-                                </li>
-                            </ul>
-                            <ul class="intro" id="qr-code">
-                                <li class="intro-item intro-title">
-                                    <a>服务支持</a>
-                                </li>
-                                <li class="intro-item intro-public">
-                                    <a href="javascript:;">公众号服务</a>
-                                </li>
-                                <li class="intro-item intro-android">
-                                    <a href="javascript:;">安卓下载</a>
-                                </li>
-                                <li class="intro-item intro-ios">
-                                    <a href="javascript:;">IOS下载</a>
-                                </li>
-                                <li class="intro-item rel introWechat ">
-                                    <a href="javascript:;">小程序</a>
-                                    <span class="icon icon-public"></span>
-                                    <span class="icon icon-android"></span>
-                                    <span class="icon icon-ios"></span>
-                                    <span class="icon icon-wechat"></span>
-                                </li>
-                            </ul>
-                        </div>
-                </div>
+    <!-- 图片导航 -->
+    <div class="container">
+        <div class="row" id="banner">
+            <div class="banner banner1">
+                <a href="secondHandHouse.html" target="_blank">我要买房</a>
             </div>
-
-            <!-- 版权 -->
-            <div id="copyright">
-                <p>泉州市鑫中正房产代理有限公司&nbsp;闽ICP备&nbsp;17021044号-1&nbsp;泉州市鑫中正房产代理有限公司保留所有权利</p>
+            <div class="banner banner2">
+                <a href="leaseHouse.html" target="_blank">我要租房</a>
             </div>
         </div>
     </div>
 
+    <!-- 二手房精选-->
+    <div  id="recommend">
+        <div class="container">
+            <div class="row">
+                <div class="recommend-text">
+                    <p class="re-text1">二手房精选</p>
+                    <div class="re-text2">
+                        <p>全城精选房源一网打尽</p>
+                        <a href="#" class="more-house">查看更多</a>
+                    </div>
+                </div>
+                <div class="recommend-content">
+                    <div class="house-item">
+                        <div class="house-img">
+                            <a href="secondHousePage.html" target="_blank"><img src="img/17208866.jpg"></a>
+                            <div class="img-info">
+                                <p>冠亚东方星城</p>
+                                <p class="price">147万</p>
+                            </div>
+                        </div>
+                        <div class="house-info">
+                            <p>3房2厅 124.34㎡ 中层（共11层）</p>
+                        </div>
+                    </div>
+
+                    <div class="house-item">
+                        <div class="house-img">
+                            <a href="secondHousePage.html" target="_blank"><img src="img/16604808.jpg"></a>
+                            <div class="img-info">
+                                <p>中骏雍景台</p>
+                                <p class="price">200万</p>
+                            </div>
+                        </div>
+                        <div class="house-info">
+                            <p>3房2厅 124.34㎡ 中层（共11层）</p>
+                        </div>
+                    </div>
+
+                    <div class="house-item">
+                        <div class="house-img">
+                            <a href="secondHousePage.html" target="_blank"><img src="img/17862035.jpg"></a>
+                            <div class="img-info">
+                                <p>时代广场一期</p>
+                                <p class="price">117万</p>
+                            </div>
+                        </div>
+                        <div class="house-info">
+                            <p>3房2厅 124.34㎡ 中层（共11层）</p>
+                        </div>
+                    </div>
+
+                    <div class="house-item">
+                        <div class="house-img">
+                            <a href="secondHousePage.html" target="_blank"><img src="img/17862041.jpg"></a>
+                            <div class="img-info">
+                                <p>太古广场三期</p>
+                                <p class="price">245万</p>
+                            </div>
+                        </div>
+                        <div class="house-info">
+                            <p>3房2厅 124.34㎡ 中层（共11层）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 出租房精选-->
+    <div  id="recommend2">
+        <div class="container">
+            <div class="row">
+                <div class="recommend-text">
+                    <p class="re-text1">出租房精选</p>
+                    <div class="re-text2">
+                        <p>出租好房源，我们为你精选</p>
+                        <a href="#" class="more-house">查看更多</a>
+                    </div>
+                </div>
+                <div class="recommend-content">
+                    <div class="house-item">
+                        <div class="house-img">
+                            <a href="secondHousePage.html" target="_blank"><img src="img/17208866.jpg"></a>
+                            <div class="img-info">
+                                <p>冠亚东方星城</p>
+                                <p class="price">147万</p>
+                            </div>
+                        </div>
+                        <div class="house-info">
+                            <p>3房2厅 124.34㎡ 中层（共11层）</p>
+                        </div>
+                    </div>
+
+                    <div class="house-item">
+                        <div class="house-img">
+                            <a href="secondHousePage.html" target="_blank"><img src="img/16604808.jpg"></a>
+                            <div class="img-info">
+                                <p>中骏雍景台</p>
+                                <p class="price">200万</p>
+                            </div>
+                        </div>
+                        <div class="house-info">
+                            <p>3房2厅 124.34㎡ 中层（共11层）</p>
+                        </div>
+                    </div>
+
+                    <div class="house-item">
+                        <div class="house-img">
+                            <a href="secondHousePage.html" target="_blank"><img src="img/17862035.jpg"></a>
+                            <div class="img-info">
+                                <p>时代广场一期</p>
+                                <p class="price">117万</p>
+                            </div>
+                        </div>
+                        <div class="house-info">
+                            <p>3房2厅 124.34㎡ 中层（共11层）</p>
+                        </div>
+                    </div>
+
+                    <div class="house-item">
+                        <div class="house-img">
+                            <a href="secondHousePage.html" target="_blank"><img src="img/17862041.jpg"></a>
+                            <div class="img-info">
+                                <p>太古广场三期</p>
+                                <p class="price">245万</p>
+                            </div>
+                        </div>
+                        <div class="house-info">
+                            <p>3房2厅 124.34㎡ 中层（共11层）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 其他 -->
+    <div id="other">
+        <div class="container">
+            <div class="row">
+                <div class="other-list">
+                    <ul class="intro" >
+                        <li class="intro-item intro-title">
+                            <a>关于我们</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">公司简介</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">公司动态</a>
+                        </li>
+                    </ul>
+                    <ul class="intro">
+                        <li class="intro-item intro-title">
+                            <a>联系我们</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">服务网点</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">会员尊享</a>
+                        </li>
+                    </ul>
+                    <ul class="intro" id="qr-code">
+                        <li class="intro-item intro-title">
+                            <a>服务支持</a>
+                        </li>
+                        <li class="intro-item intro-android">
+                            <a href="javascript:;">安卓下载</a>
+                        </li>
+                        <li class="intro-item intro-ios">
+                            <a href="javascript:;">IOS下载</a>
+                            <span class="icon icon-public"></span>
+                            <span class="icon icon-android"></span>
+                            <span class="icon icon-ios"></span>
+                            <span class="icon icon-wechat"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 版权 -->
+    <div id="copyright" class="container-fluid">
+        <p>福建福居在线互联网信息有限公司&nbsp;闽ICP备&nbsp;170210XX号-X</p>
+    </div>
+
 
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery.fullpage.min.js"></script>
-    <script src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
-
-        $(function() {
-            // 激活全屏插件
-            $('#dowebok').fullpage({
-                verticalCentered:false
-            });
-
+        $(document).ready(function() {
             // 搜索框的三角形
             $('.search-text li').click(function() {
                 $(this).parent().find(".sjx").removeClass('sjx-none');
@@ -224,33 +285,6 @@
                 $(this).siblings("li").find(".sjx").removeClass('sjx-block').addClass('sjx-none');
             });
 
-            // 房源推荐
-            $('.recommend-house-item').mouseover(function() {
-                $(this).children('.house-img').addClass('imgScale');
-            });
-            $('.recommend-house-item').mouseout(function() {
-                $(this).children('.house-img').removeClass('imgScale');
-            });
-
-            // 显示各个二维码
-            $('#qr-code li').each(function() {
-                $(this).hover(function() {
-                    var idx=$(this).index();
-                    if (idx==0) {
-                        return 0;
-                    }else{
-                        $('.icon').eq(idx-1).addClass('icon-animate');
-                    }
-
-                }, function() {
-                    var idx=$(this).index();
-                    if (idx==0) {
-                        return 0;
-                    }else{
-                        $('.icon').eq(idx-1).removeClass('icon-animate');
-                    }
-                })
-            })
         })
     </script>
 </body>

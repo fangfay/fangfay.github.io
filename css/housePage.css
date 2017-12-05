@@ -1,6 +1,6 @@
 /*导航*/
 .nav-bg {
-  background-color: #f1394c;
+  background-color: #18A960;
 }
 #nav .nav-active {
   color:#fff;
@@ -25,7 +25,7 @@ nav li:after {
   color:#888;
 }
 .website-nav a:hover {
-  color:#f1394c;
+  color:#18A960;
 }
 /*房源标题*/
 #house-title {
@@ -146,14 +146,14 @@ nav li:after {
 }
 .price {
   font-size:40px;
-  color:#f1394c;
+  color:#18A960;
 }
 .house-basic a {
   color: #c39152;
   font-weight: bold;
 }
 .house-basic a:hover {
-  color:#f1394c;
+  color:#18A960;
 }
 /*经纪人信息*/
 .agent {
@@ -193,13 +193,13 @@ nav li:after {
   font-size:12px;
 }
 .call-agent em {
-  color:#f1394c;
+  color:#18A960;
   font-size:22px;
   font-weight:bold;
 }
 .newHouse-agent {
   font-size:22px;
-  color:#f1394c;
+  color:#18A960;
   margin:auto;
 }
 /*楼盘简介*/
@@ -315,7 +315,7 @@ h3 {
   color:#fc6e88;
 }
 .layout-info a:hover {
-  color:#f1394c;
+  color:#18A960;
   font-weight:bold;
 }
 /*房源概述*/
@@ -331,20 +331,20 @@ h3 {
     border-radius: 2px;
 }
 .labelColor1 {
-  background-color: #f6e6cf;
-  color:#c39152;
+  background-color: #f3f3cb;
+  color:#9bab28;
 }
 .labelColor2 {
-  background-color: #d4f4ff;
-  color:#55c2df;
+  background-color: #d4e4ff;
+  color:#5565df;
 }
 .labelColor3 {
-  background-color: #d7f3e4;
-  color:#45b07a;
+  background-color: #d2f7f5;
+  color:#2fa8bd;
 }
 .labelColor4 {
-  background-color: #fbced3;
-  color:#fc6e88;
+  background-color: #efdcf7;
+  color:#b733e0;
 }
 
 /* 房贷计算器 */
@@ -376,8 +376,8 @@ h3 {
 }
 .reckon button{
   width:332px;
-  color:#f1394c;
-  border:1px solid #f1394c;
+  color:#18A960;
+  border:1px solid #18A960;
   height:40px;1
   line-height:40px;
   text-align:center;
@@ -385,7 +385,7 @@ h3 {
   cursor:pointer;
 }
 .reckon button:hover {
-  background-color:#f1394c;
+  background-color:#18A960;
   color:#fff;
   border-color:#fff;
 }

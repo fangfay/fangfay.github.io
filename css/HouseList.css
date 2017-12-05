@@ -90,13 +90,13 @@
     line-height:40px;
     background:#fff;
     padding-left:10px;
-    border:1px solid #f1394c;
+    border:1px solid #18A960;
     margin-right:6px;
 }
 .search-bar button {
     width:100px;
     height:40px;
-    background:#f1394c;
+    background:#18A960;
     border:none;
     color:#fff;
 }
@@ -136,7 +136,7 @@
     padding:0 3px;
 }
 .select-active {
-    background:#f1394c;
+    background:#18A960;
     color:#fff;
 }
 .newHouse-house-select {
@@ -162,7 +162,8 @@
     font-size:12px;
 }
 .sort .sort-active a{
-    color:#f1394c;
+    color:#18A960;
+    font-weight:bold;
 }
 .newHouse-sort {
   padding-top:10px;
@@ -221,7 +222,7 @@
     font-weight:bold;
 }
 .temp-title:hover {
-    color:#f1394c;
+    color:#18A960;
     cursor:pointer;
 }
 .temp-tab span {
@@ -231,20 +232,20 @@
     border-radius: 2px;
 }
 .labelColor1 {
-  background-color: #f6e6cf;
-  color:#c39152;
+  background-color: #f3f3cb;
+  color:#9bab28;
 }
 .labelColor2 {
-  background-color: #d4f4ff;
-  color:#55c2df;
+  background-color: #d4e4ff;
+  color:#5565df;
 }
 .labelColor3 {
-  background-color: #d7f3e4;
-  color:#45b07a;
+  background-color: #d2f7f5;
+  color:#2fa8bd;
 }
 .labelColor4 {
-  background-color: #fbced3;
-  color:#fc6e88;
+  background-color: #efdcf7;
+  color:#b733e0;
 }
 .temp-price {
     margin-left:auto;
@@ -253,7 +254,7 @@
     color:#888;
 }
 .price {
-    color:#f1394c;
+    color:#18A960;
     margin-bottom:4px;
 }
 .price span {
@@ -304,17 +305,17 @@
     text-decoration:none;
 }
 .page-nav li:hover {
-    border-color:#f1394c;
+    border-color:#18A960;
 }
 .page-nav a:hover {
-    background:#f1394c;
+    background:#18A960;
     color:#fff;
 }
 .page-nav .page-active {
-    border-color:#f1394c;
+    border-color:#18A960;
 }
 .page-nav .page-active a{
-    background:#f1394c;
+    background:#18A960;
     color:#fff;
 }
 /*二手房推荐*/
@@ -359,7 +360,7 @@
     -webkit-justify-content:space-between;
 }
 .recommend-price span {
-    color:#f1394c;
+    color:#18A960;
     font-weight:bold;
 }
 @media screen and (min-width:48em) and (max-width:62em){
