@@ -1,0 +1,385 @@
+/*房源推荐*/
+.swiper-container {
+  width: 100%;
+  height: 330px;
+  margin: 20px auto; }
+
+.swiper-slide {
+  background: #fff;
+  /* Center slide text vertically */
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+/*房源推荐内容*/
+.house-img {
+  width: 300px;
+  height: 220px;
+  position: relative; }
+  .house-img img {
+    width: 100%;
+    height: 100%; }
+
+.img-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color:#fff;
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  display:-webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content:space-between;
+  align-items: baseline; }
+  .img-info p {
+    display: inline-block;
+    font-size: 20px; }
+  .img-info .house-price {
+    font-size: 26px;
+    font-weight: bold; }
+
+.house-info {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  padding: 12px 15px;
+  display: flex;
+  display:-webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content:space-between;
+  font-size: 16px;
+  color: #000; }
+
+/* 房源搜索背景*/
+.houseSearch-bg {
+    width:100%;
+    height:340px;
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index:-99;
+    background: url(../img/houseSearch-bg.jpg);
+    background-size:70%;
+}
+
+/*搜索框*/
+.search-bar {
+    height:40px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.search-bar form {
+  display:flex;
+  display:-webkit-flex;
+  align-items:center;
+  -webkit-align-items:center;
+}
+.search-bar-div {
+  width: 800px;
+}
+.search-bar input {
+    width:680px;
+    height:38px;
+    line-height:40px;
+    background:#fff;
+    padding-left:10px;
+    border:1px solid #18A960;
+    margin-right:6px;
+}
+.search-bar button {
+    width:100px;
+    height:40px;
+    background:#18A960;
+    border:none;
+    color:#fff;
+}
+.search-bar input::-webkit-input-placeholder {
+    font-size:14px;
+    color: #888;
+}
+.search-bar input::-moz-input-placeholder {
+    font-size:14px;
+    color: #888;
+}
+.search-bar input::-ms-input-placeholder {
+    font-size:14px;
+    color: #888;
+}
+.newHouse-search-bar {
+  margin-top:40px;
+  margin-bottom:40px;
+}
+/*分类选项*/
+.house-select {
+    padding:20px;
+    background:#fff;
+    margin-top:20px;
+    font-size:13px;
+    margin-bottom:40px;
+    width:100%;
+}
+.house-select dl+dl {
+    margin-top:20px;
+}
+.house-select dt,
+.house-select dd {
+    display:inline-block;
+    margin-right:12px;
+    cursor:pointer;
+    padding:0 3px;
+}
+.select-active {
+    background:#18A960;
+    color:#fff;
+}
+.newHouse-house-select {
+  padding-top:30px;
+  padding-bottom:30px;
+}
+/*排序*/
+.sort {
+    border-bottom:1px solid #eaeaea;
+    font-size:14px;
+    padding-bottom:10px;
+}
+.sort li {
+    display:inline-block;
+    padding:10px;
+}
+.sort a {
+    color:#888;
+    padding:10px;
+    text-decoration: none;
+}
+.sort i {
+    font-size:12px;
+}
+.sort .sort-active a{
+    color:#18A960;
+    font-weight:bold;
+}
+.newHouse-sort {
+  padding-top:10px;
+}
+/*房源列表*/
+.house-temp {
+    padding-top:30px;
+    padding-bottom: 30px;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-between;
+    -webkit-justify-content:space-between;
+}
+.house-temp:hover {
+    background-color:#edefee;
+}
+.house-temp+.house-temp {
+  border-top:1px solid #eaeaea;
+}
+.house-temp li {
+    display:inline-block;
+}
+.temp-img {
+    width:230px;
+    max-width:230px;
+    max-height: 150px;
+    height:150px;
+}
+.temp-img img {
+    width:100%;
+    height:100%;
+}
+.temp-intro,
+.temp-add {
+    color:#888;
+    font-size:15px;
+}
+.temp-add li {
+    margin-right:10px;
+}
+.temp-info {
+    margin-left:20px;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:column;
+    -webkit-flex-direction: column;
+    justify-content:space-between;
+    -webkit-justify-content:space-between;
+}
+.temp-intro p {
+    display:inline-block;
+}
+.temp-title {
+    display:block;
+    font-size:20px;
+    font-weight:bold;
+}
+.temp-title:hover {
+    color:#18A960;
+    cursor:pointer;
+}
+.temp-tab span {
+    padding:2px 10px;
+    margin-right:10px;
+    font-size:14px;
+    border-radius: 2px;
+}
+.labelColor1 {
+  background-color: #f3f3cb;
+  color:#9bab28;
+}
+.labelColor2 {
+  background-color: #d4e4ff;
+  color:#5565df;
+}
+.labelColor3 {
+  background-color: #d2f7f5;
+  color:#2fa8bd;
+}
+.labelColor4 {
+  background-color: #efdcf7;
+  color:#b733e0;
+}
+.temp-price {
+    margin-left:auto;
+    display: flex;
+    display:-webkit-flex;
+    color:#888;
+}
+.price {
+    color:#18A960;
+    margin-bottom:4px;
+}
+.price span {
+    font-weight:bold;
+    font-size:25px;
+    margin-right:10px;
+}
+.newHouse-temp-title {
+  font-size:28px;
+}
+.newHouse-temp-img {
+  width: 250px;
+  max-width:250px;
+  height:180px;
+  max-height:180px;
+}
+.newHouse-price span{
+  font-size:30px;
+}
+/*租房补充样式*/
+.update {
+  font-size:12px;
+}
+.title-color {
+  color:#00b66b;
+}
+.title-color2 {
+  color:#55c2df;
+}
+/*分页*/
+#navigation {
+    display: flex;
+    display:-webkit-flex;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+.page-nav {
+    margin:auto;
+}
+.page-nav li{
+    display:inline-block;
+    border:1px solid #eaeaea;
+}
+.page-nav a {
+    display:inline-block;
+    padding:8px 20px;
+    font-size:15px;
+    text-decoration:none;
+}
+.page-nav li:hover {
+    border-color:#18A960;
+}
+.page-nav a:hover {
+    background:#18A960;
+    color:#fff;
+}
+.page-nav .page-active {
+    border-color:#18A960;
+}
+.page-nav .page-active a{
+    background:#18A960;
+    color:#fff;
+}
+/*二手房推荐*/
+.recommend-bg {
+    background: #f5f5f6;
+}
+#recommend {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.recommend-title {
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.recommend-temp {
+    display:inline-block;
+    margin-right:50px;
+    font-size:14px;
+    color:#888;
+    width:230px;
+}
+.recommend-img {
+    width:230px;
+    height:150px;
+    max-height:150px;
+}
+.recommend-img img{
+    width:100%;
+    height:100%;
+    max-width:230px;
+    max-height:150px;
+}
+.recommend-intro {
+    margin-top:8px;
+    margin-bottom:6px;
+}
+.recommend-price {
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-between;
+    -webkit-justify-content:space-between;
+}
+.recommend-price span {
+    color:#18A960;
+    font-weight:bold;
+}
+@media screen and (min-width:48em) and (max-width:62em){
+    .recommend-temp {
+        margin-right:20px;
+        width:200px;
+    }
+    .recommend-img {
+        width:200px;
+        height:120px;
+    }
+}
+@media screen and (max-width:48em) {
+    .recommend-temp {
+        width:170px;
+        margin-right:10px;
+    }
+    .recommend-img {
+        width:170px;
+        height:100px;
+    }
+}

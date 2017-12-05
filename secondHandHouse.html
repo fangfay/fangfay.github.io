@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>二手房-福居</title>
+    <link rel="shorcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/kk-public.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/toolbar.css">
+    <link rel="stylesheet" type="text/css" href="css/HouseList.css">
+</head>
+<body>
+    <!-- logo与导航 -->
+    <div class="nav-bg">
+        <nav id="nav" class="layout">
+            <a href="index.html" class="logo-box">
+                <img src="img/logo-small.png" alt="鑫在线" class="logo">
+            </a>
+            <ul>
+              <li><a href="index.html" target="_blank">首页</a></li>
+              <li ><a href="secondHandHouse.html" class="nav-active">二手房</a></li>
+              <li><a href="newHouse.html" target="_blank">新房</a></li>
+              <li ><a href="leaseHouse.html" target="_blank">租房</a></li>
+              <li ><a href="denlu.html" target="_blank">个人中心</a></li>
+              <li ><a href="denlu.html" target="_blank">登录</a></li>
+              <li ><a href="zhuce.html" target="_blank">注册</a></li>
+
+              <!-- 登陆状态
+              <li class="signIn"><a href="#">13500001234</a></li>
+              <li class="exit"><a href="#">退出</a></li>-->
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 导航与搜索栏的背景 -->
+    <div class="houseSearch-bg"></div>
+
+   <!-- 搜索框 -->
+    <div class="search-bar layout">
+        <form  method="post" accept-charset="utf-8">
+            <input type="text" name="searchKey" placeholder="请输入区域、商圈或小区名开始找房" value="">
+            <button type="submit" id="searchBtn"><i class="iconfont icon-shapecopy6"></i></button>
+        </form>
+    </div>
+
+    <!-- 分类选项-->
+    <div class="layout">
+        <div class="house-select">
+            <form action="" method="get" accept-charset="utf-8">
+                <dl>
+                    <dt>售价：</dt>
+                    <dd class="select-active">不限</dd>
+                    <dd>100万以下</dd>
+                    <dd>100-200万</dd>
+                    <dd>200-300万</dd>
+                    <dd>300-400万</dd>
+                    <dd>400万以上</dd>
+                </dl>
+                <dl>
+                    <dt>面积：</dt>
+                    <dd class="select-active">不限</dd>
+                    <dd>50m²以下</dd>
+                    <dd>50-100m²</dd>
+                    <dd>100-150m²</dd>
+                    <dd>150-200m²</dd>
+                    <dd>200m²以上</dd>
+                </dl>
+                <dl>
+                    <dt>房型：</dt>
+                    <dd class="select-active">不限</dd>
+                    <dd>一室</dd>
+                    <dd>两室</dd>
+                    <dd>三室</dd>
+                    <dd>四室</dd>
+                    <dd>四室及以上</dd>
+                </dl>
+                <dl>
+                    <dt>朝向：</dt>
+                    <dd class="select-active">不限</dd>
+                    <dd>朝东</dd>
+                    <dd>朝西</dd>
+                    <dd>朝南</dd>
+                    <dd>朝北</dd>
+                    <dd>南北</dd>
+                </dl>
+            </form>
+        </div>
+    </div>
+
+    <!-- 排序-->
+    <div class="layout sort">
+        <ul>
+            <li class="not-sort">
+                <a href="#">排序：</a>
+            </li>
+            <li class="sort-active">
+                <a href="#" >最新</a>
+            </li>
+            <li>
+                <a href="#">价格
+                  <i class="iconfont icon-xiangxiajiantou"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">面积
+                  <i class="iconfont icon-xiangxiajiantou"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 房源列表-->
+    <div class="layout">
+        <div class="house-temp">
+            <div class="temp-img">
+                <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+            </div>
+            <div class="temp-info">
+                <a href="secondHousePage.html" target="_blank" class="temp-title">雍景台最新边套出售不沿街</a>
+                <ul class="temp-intro">
+                    <li>
+                        <p>5室2厅</p>
+                      <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>313㎡</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>底层（共4层）</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>毛坯</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>2014年建造</p>
+                    </li>
+                </ul>
+                <ul class="temp-add">
+                    <li>中骏雍景台</li>
+                    <li>0-</li>
+                </ul>
+                <div class="temp-tab">
+                    <span class="labelColor1">别墅</span>
+                    <span class="labelColor2">学校周边</span>
+                    <span class="labelColor3">三面采光</span>
+                    <span class="labelColor4">毛坯</span>
+                </div>
+            </div>
+            <div class="temp-price">
+                <div style="margin:auto;">
+                    <p class="price"><span>800</span>万</p>
+                    <p>25559元/㎡</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="house-temp">
+            <div class="temp-img">
+                <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+            </div>
+            <div class="temp-info">
+                <a href="#" class="temp-title" target="_blank">雍景台最新边套出售不沿街</a>
+                <ul class="temp-intro">
+                    <li>
+                        <p>5室2厅</p>
+                      <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>313㎡</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>底层（共4层）</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>毛坯</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>2014年建造</p>
+                    </li>
+                </ul>
+                <ul class="temp-add">
+                    <li>中骏雍景台</li>
+                    <li>0-</li>
+                </ul>
+                <div class="temp-tab">
+                    <span class="labelColor1">别墅</span>
+                    <span class="labelColor2">学校周边</span>
+                    <span class="labelColor3">三面采光</span>
+                    <span class="labelColor4">毛坯</span>
+                </div>
+            </div>
+            <div class="temp-price">
+                <div style="margin:auto;">
+                    <p class="price"><span>800</span>万</p>
+                    <p>25559元/㎡</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="house-temp">
+            <div class="temp-img">
+                <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+            </div>
+            <div class="temp-info">
+                <a href="#" class="temp-title" target="_blank">雍景台最新边套出售不沿街</a>
+                <ul class="temp-intro">
+                    <li>
+                        <p>5室2厅</p>
+                      <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>313㎡</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>底层（共4层）</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>毛坯</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>2014年建造</p>
+                    </li>
+                </ul>
+                <ul class="temp-add">
+                    <li>中骏雍景台</li>
+                    <li>0-</li>
+                </ul>
+                <div class="temp-tab">
+                    <span class="labelColor1">别墅</span>
+                    <span class="labelColor2">学校周边</span>
+                    <span class="labelColor3">三面采光</span>
+                    <span class="labelColor4">毛坯</span>
+                </div>
+            </div>
+            <div class="temp-price">
+                <div style="margin:auto;">
+                    <p class="price"><span>800</span>万</p>
+                    <p>25559元/㎡</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="house-temp">
+            <div class="temp-img">
+                <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+            </div>
+            <div class="temp-info">
+                <a href="#" class="temp-title" target="_blank">雍景台最新边套出售不沿街</a>
+                <ul class="temp-intro">
+                    <li>
+                        <p>5室2厅</p>
+                      <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>313㎡</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>底层（共4层）</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>毛坯</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>2014年建造</p>
+                    </li>
+                </ul>
+                <ul class="temp-add">
+                    <li>中骏雍景台</li>
+                    <li>0-</li>
+                </ul>
+                <div class="temp-tab">
+                    <span class="labelColor1">别墅</span>
+                    <span class="labelColor2">学校周边</span>
+                    <span class="labelColor3">三面采光</span>
+                    <span class="labelColor4">毛坯</span>
+                </div>
+            </div>
+            <div class="temp-price">
+                <div style="margin:auto;">
+                    <p class="price"><span>800</span>万</p>
+                    <p>25559元/㎡</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="house-temp">
+            <div class="temp-img">
+                <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+            </div>
+            <div class="temp-info">
+                <a href="#" class="temp-title" target="_blank">雍景台最新边套出售不沿街</a>
+                <ul class="temp-intro">
+                    <li>
+                        <p>5室2厅</p>
+                      <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>313㎡</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>底层（共4层）</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>毛坯</p>
+                        <i class="iconfont icon-shuxian"></i>
+                    </li>
+                    <li>
+                        <p>2014年建造</p>
+                    </li>
+                </ul>
+                <ul class="temp-add">
+                    <li>中骏雍景台</li>
+                    <li>0-</li>
+                </ul>
+                <div class="temp-tab">
+                    <span class="labelColor1">别墅</span>
+                    <span class="labelColor2">学校周边</span>
+                    <span class="labelColor3">三面采光</span>
+                    <span class="labelColor4">毛坯</span>
+                </div>
+            </div>
+            <div class="temp-price">
+                <div style="margin:auto;">
+                    <p class="price"><span>800</span>万</p>
+                    <p>25559元/㎡</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分页 -->
+        <div class="layout" id="navigation">
+          <ul class="page-nav">
+            <li>
+              <a href="#">上一页</a>
+            </li>
+            <li class="page-active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+              <a href="#">下一页</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- 房源推荐内容-->
+    <div class="recommend-bg">
+
+    <div class="layout" id="recommend">
+        <div class="recommend-title">
+            <p>二手房精选</p>
+        </div>
+        <div class="recomment-box">
+            <div class="recommend-temp">
+                <div class="recommend-img">
+                    <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+                </div>
+                <div class="recommend-intro">
+                    中骏雍景台&nbsp;3室2厅
+                </div>
+                <div class="recommend-price">
+                    <p>120m²</p>
+                    <span>200万</span>
+                </div>
+            </div>
+
+            <div class="recommend-temp">
+                <div class="recommend-img">
+                    <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+                </div>
+                <div class="recommend-intro">
+                    中骏雍景台&nbsp;3室2厅
+                </div>
+                <div class="recommend-price">
+                    <p>120m²</p>
+                    <span>200万</span>
+                </div>
+            </div>
+
+            <div class="recommend-temp">
+                <div class="recommend-img">
+                    <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+                </div>
+                <div class="recommend-intro">
+                    中骏雍景台&nbsp;3室2厅
+                </div>
+                <div class="recommend-price">
+                    <p>120m²</p>
+                    <span>200万</span>
+                </div>
+            </div>
+
+            <div class="recommend-temp">
+                <div class="recommend-img">
+                    <a href="secondHousePage.html" target="_blank"><img src="img/16250166.jpg"></a>
+                </div>
+                <div class="recommend-intro">
+                    中骏雍景台&nbsp;3室2厅
+                </div>
+                <div class="recommend-price">
+                    <p>120m²</p>
+                    <span>200万</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- 其他 -->
+    <div id="other">
+        <div class="layout">
+                <div class="other-list">
+                    <ul class="intro" >
+                        <li class="intro-item intro-title">
+                            <a>关于我们</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">公司简介</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">公司动态</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">人员招聘</a>
+                        </li>
+                    </ul>
+                    <ul class="intro">
+                        <li class="intro-item intro-title">
+                            <a>联系我们</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">服务网点</a>
+                        </li>
+                        <li class="intro-item">
+                            <a href="#">会员尊享</a>
+                        </li>
+                    </ul>
+                    <ul class="intro" id="qr-code">
+                        <li class="intro-item intro-title">
+                            <a>服务支持</a>
+                        </li>
+                        <li class="intro-item intro-public">
+                            <a href="javascript:;">公众号服务</a>
+                        </li>
+                        <li class="intro-item intro-android">
+                            <a href="javascript:;">安卓下载</a>
+                        </li>
+                        <li class="intro-item intro-ios">
+                            <a href="javascript:;">IOS下载</a>
+                        </li>
+                        <li class="intro-item rel introWechat ">
+                            <a href="javascript:;">小程序</a>
+                            <span class="icon icon-public"></span>
+                            <span class="icon icon-android"></span>
+                            <span class="icon icon-ios"></span>
+                            <span class="icon icon-wechat"></span>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+    <!-- 版权 -->
+    <div id="copyright">
+        <p>泉州市鑫中正房产代理有限公司&nbsp;闽ICP备&nbsp;17021044号-1&nbsp;泉州市鑫中正房产代理有限公司保留所有权利</p>
+    </div>
+
+    <!-- 工具条-->
+    <div class="toolbar">
+        <a href="javascript:;" class="toolbar-item"  title="公众号服务">
+            <span class="toolbar-btn">
+                <i class="iconfont-tool iconfont icon-qiyefuwuhao"></i>
+            </span>
+            <span class="toolbar-layer toolbar-layer-server"></span>
+        </a>
+        <a href="javascript:;" class="toolbar-item" title="安卓下载">
+            <span class="toolbar-btn" >
+                <i class="iconfont-tool iconfont icon-andorid"></i>
+            </span>
+            <span class="toolbar-layer toolbar-layer-android"></span>
+        </a>
+        <a href="javascript:;" class="toolbar-item" title="IOS下载">
+            <span class="toolbar-btn">
+                <i class="iconfont-tool iconfont icon-ios"></i>
+            </span>
+            <span class="toolbar-layer toolbar-layer-ios"></span>
+        </a>
+        <a href="javascript:;" class="toolbar-item" title="小程序">
+            <span class="toolbar-btn">
+                <i class="iconfont-tool iconfont icon-xiaochengxu"></i>
+            </span>
+            <span class="toolbar-layer toolbar-layer-wechat"></span>
+        </a>
+        <a href="javascript:;" class="toolbar-item" id="backTop" title="返回顶部">
+            <span class="toolbar-btn">
+                <i class="iconfont-tool iconfont icon-ldc-back-top"></i>
+            </span>
+        </a>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+    $(document).ready(function($) {
+
+        // 分类选项的点击样式
+        $('.house-select dl dd').click(function() {
+            $(this).siblings().removeClass('select-active');
+            $(this).addClass('select-active');
+        });
+
+        // 排序的点击样式
+        $('.sort li:not(.not-sort)').click(function() {
+            $(this).siblings().removeClass('sort-active');
+            $(this).addClass('sort-active');
+        });
+        // 分页的点击样式
+        $('#navigation li').click(function() {
+            $(this).siblings().removeClass('page-active');
+            $(this).addClass('page-active');
+        });
+
+
+        // 显示各个二维码
+        $('#qr-code li').each(function() {
+            $(this).hover(function() {
+                var idx=$(this).index();
+                if (idx==0) {
+                    return 0;
+                }else{
+                    $('.icon').eq(idx-1).addClass('icon-animate');
+                }
+
+            }, function() {
+                var idx=$(this).index();
+                if (idx==0) {
+                    return 0;
+                }else{
+                    $('.icon').eq(idx-1).removeClass('icon-animate');
+                }
+            });
+        })
+
+        // 返回顶部
+        $('#backTop').on('click',move);
+        $(window).on('scroll',function () {
+            checkPosition($(window).height());
+        });
+
+        checkPosition($(window).height());
+
+        function move() {
+            $('html,body').animate({
+                scrollTop:0
+            },800)
+        }
+        // 监控屏幕的高度是否显示返回顶部按钮
+        function checkPosition(pos) {
+            if ($(window).scrollTop() > pos ){
+                $('#backTop').fadeIn();
+            } else {
+                $('#backTop').fadeOut();
+            }
+        }
+    });
+    </script>
+</body>
+</html>
